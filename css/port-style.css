@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee|Merienda');
 .max-viewport {
   min-height: 100vh;
 	display: flex;
@@ -13,4 +14,13 @@ body {
     rgba(0, 0, 255, 0.7)
   );
 }
-
+.title {
+	font-family: 'Handlee', cursive;
+	font-size: 100px;
+	font-weight: 700;
+}
+.sub-title{
+	font-family: 'Merienda', cursive;
+font-weight: 300;
+font-size: 60px;
+}
