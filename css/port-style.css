@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Handlee|Merienda');
 .max-viewport {
   min-height: 300vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
 }
 body {
   background: rgba(0, 0, 255, 0.6);
