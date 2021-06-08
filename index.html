@@ -16,7 +16,24 @@
     <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
-    <header style="background: #000"></header>
+    <header>
+      <div class="site-header container">
+        <div class="logo-text">
+          <a href="#">Michael B. Horn<br /></a>
+          <span>Speaker. Author</span>
+        </div>
+        <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
+        <div class="site-header__menu group">
+          <nav class="main-navigation">
+            <ul class="min-list group">
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="#">Campuses</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
     <div class="banner">
       <!-- Swiper -->
       <div class="swiper-container">
@@ -133,7 +150,14 @@
       </div>
     </div>
     <!-- Blog Section -->
-    <div class="blog container"></div>
+    <div class="blog container">
+      <div class="blog--card">
+        <h3>Latest Blog</h3>
+        <div class="blog__card--inner">
+          <img src="" alt="" class="img-box" />
+        </div>
+      </div>
+    </div>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/fontawesome.min.js"></script>
