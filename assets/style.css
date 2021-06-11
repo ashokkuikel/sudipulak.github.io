@@ -299,6 +299,7 @@ header {
   background: url("../assets/images/publications-banner.jpg");
   background-size: cover;
   padding: 60px 0;
+  background: #000;
 }
 
 .publication__title {
@@ -522,4 +523,222 @@ header {
 
 .image-card .filter {
   margin-top: 30px;
+}
+
+/* Footer Section */
+footer {
+  background: #333;
+  padding: 60px 0;
+}
+
+.upper-footer {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.upper-footer ul {
+  display: flex;
+  list-style: none;
+}
+
+.upper-footer ul li {
+  margin-right: 20px;
+}
+
+.upper-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.upper-footer .site-map {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 46px 48px 46px 0;
+}
+
+.upper-footer .site-map {
+  white-space: nowrap;
+}
+
+.upper-footer .site-map .fa-sitemap,
+.upper-footer .get-updates .fa-bell {
+  padding-right: 10px;
+}
+
+.upper-footer .get-updates {
+  width: 50%;
+  padding: 46px 48px 46px 30px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+s .upper-footer .follow-us {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+}
+
+.upper-footer .follow-us,
+.upper-footer .follow-me {
+  padding: 30px;
+}
+
+.upper-footer .follow-us h4,
+.upper-footer .follow-me h4 {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+  white-space: nowrap;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.middle-footer {
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.middle-footer .contact-info {
+  padding: 20px 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.middle-footer .contact-info ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.middle-footer .contact-info li {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.4);
+  width: 50%;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.middle-footer .contact-info h4,
+.middle-footer .affiliates h4 {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 20px;
+}
+
+.middle-footer .contact-info p {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.middle-footer .contact-info a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.middle-footer .contact-info svg {
+  padding-right: 10px;
+}
+
+.middle-footer .affiliates {
+  width: 80%;
+  padding: 20px;
+}
+
+.middle-footer .affiliates-logos {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.middle-footer .affiliates .img-box {
+  width: calc(100% / 3);
+  text-decoration: none;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  padding: 20px;
+}
+
+.middle-footer .affiliates .img-box svg {
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+.middle-footer .affiliates img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.lower-footer {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lower-footer .terms {
+  padding: 30px 0;
+  width: 90%;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lower-footer .terms ul {
+  display: flex;
+  list-style: none;
+}
+
+.lower-footer .terms a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+.lower-footer .terms li {
+  padding: 5px 20px;
+}
+.lower-footer .terms li:first-child {
+  padding-left: 0;
+}
+
+.lower-footer .terms li:nth-child(2) a {
+  border-right: 2px solid rgba(255, 255, 255, 0.1);
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 0px 20px;
+}
+
+.lower-footer .terms-logo {
+  margin: auto;
+}
+
+.lower-footer .terms-logo img {
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+}
+
+.copy-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.copy-footer .logo {
+  display: flex;
+}
+
+.copy-footer .logo svg {
+  width: 100px;
+  height: 50px;
+  fill: #fff;
+}
+
+.copy-footer .logo p {
+  max-width: 300px;
+  margin-left: 15px;
+  font-size: 13px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.copy-footer .copy-text p {
+  font-size: 16px;
+  color: #fff;
 }
