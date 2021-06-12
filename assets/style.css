@@ -8,7 +8,6 @@
   margin: 0;
   padding: 0;
 }
-
 body {
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
@@ -72,6 +71,7 @@ header {
   font-size: 42px;
   font-weight: 700;
 }
+
 .logo-text span {
   font-size: 24px;
   letter-spacing: 1px;
@@ -152,7 +152,6 @@ header {
     opacity: 1;
   }
   .min-list {
-    /* height: 100%; */
     flex-flow: column;
     justify-content: center;
     align-items: center;
@@ -180,8 +179,19 @@ header {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .logo-text {
+    font-size: 20px;
+  }
+
+  .logo-text a {
+    font-size: 30px;
+  }
+}
+
 .banner {
   padding: 0 7%;
+  max-width: 1170px;
   height: 115vh;
   margin: auto;
   background: url("../assets/images/hero-banner.jpg");
@@ -239,6 +249,36 @@ header {
   align-items: flex-end;
 }
 
+@media screen and (max-width: 992px) {
+  .banner--inner {
+    display: block;
+    padding: 60px 20px;
+    height: auto;
+  }
+
+  .banner--inner__image {
+    display: block;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner--inner {
+    padding: 100px 20px 0;
+  }
+
+  .banner--inner__text h4 {
+    width: auto;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .banner--inner__text h4::after {
+    bottom: -45px;
+    right: 0px;
+  }
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   display: none;
@@ -257,7 +297,6 @@ header {
 /* About Section  */
 .about {
   display: flex;
-  /* height: 100vh; */
   padding-bottom: 60px;
 }
 
@@ -292,6 +331,46 @@ header {
 .about__image img {
   margin-top: -60px;
   padding-right: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .about {
+    display: block;
+    padding: 60px 20px;
+  }
+
+  .about__description {
+    padding: 20px 0;
+  }
+
+  .about__description h3 {
+    margin-bottom: 10px;
+  }
+
+  .about__description h2 {
+    margin-bottom: 20px;
+  }
+
+  .about__description p:first-of-type {
+    margin-bottom: 10px;
+  }
+
+  .about__image img {
+    margin: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about__description h3 {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+
+  .about__description h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
 }
 
 /* Publication section  */
@@ -333,12 +412,44 @@ header {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: 600;
-  width: 600px;
+  max-width: 600px;
   margin: auto;
   color: #fff;
   text-align: center;
   margin-bottom: 50px;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 992px) {
+  .publication__card {
+    margin: 20px;
+  }
+
+  .publication--card__inner {
+    width: calc(100% / 2);
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .publication__title h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .publication__title h2 {
+    font-size: 40px;
+    margin-bottom: 60px;
+  }
+
+  .publication .publication__description {
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+
+  .publication .publication__card {
+    display: block;
+  }
 }
 
 .amazon-button {
@@ -365,6 +476,19 @@ header {
 .third-col {
   width: calc(100% / 3);
   padding: 60px 30px 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .blog {
+    display: block;
+  }
+
+  .first-col,
+  .second-col,
+  .third-col {
+    width: auto;
+    padding: 60px 20px 20px;
+  }
 }
 
 .first-col h3,
@@ -571,7 +695,18 @@ footer {
   padding: 46px 48px 46px 30px;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
-s .upper-footer .follow-us {
+
+@media screen and (max-width: 1024px) {
+  footer {
+    padding: 20px;
+  }
+
+  .upper-footer .get-updates {
+    width: auto;
+  }
+}
+
+.upper-footer .follow-us {
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   box-sizing: border-box;
 }
@@ -591,6 +726,39 @@ s .upper-footer .follow-us {
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 800px) {
+  .upper-footer {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .upper-footer .site-map,
+  .upper-footer .get-updates {
+    width: 50%;
+    padding: 46px 0 46px 0;
+    border-right: 1px solid rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+  }
+
+  .upper-footer .follow-us,
+  .upper-footer .follow-me {
+    width: 50%;
+    border-right: 1px solid transparent;
+    padding: 0 0 46px 0;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .upper-footer .follow-us,
+  .upper-footer .follow-me {
+    width: 100%;
+    border-right: 1px solid transparent;
+    padding: 0 0 46px 0;
+    box-sizing: border-box;
+  }
+}
+
 .middle-footer {
   display: flex;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -599,6 +767,15 @@ s .upper-footer .follow-us {
 .middle-footer .contact-info {
   padding: 20px 0;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 992px) {
+  .middle-footer {
+    display: block;
+  }
+  .middle-footer .contact-info {
+    border-right: 1px solid rgba(255, 255, 255, 0);
+  }
 }
 
 .middle-footer .contact-info ul {
@@ -669,6 +846,33 @@ s .upper-footer .follow-us {
   object-fit: contain;
 }
 
+@media screen and (max-width: 600px) {
+  .middle-footer .contact-info ul {
+    display: block;
+  }
+
+  .middle-footer .contact-info a {
+    white-space: nowrap;
+  }
+
+  .middle-footer .contact-info br {
+    display: none;
+  }
+
+  .middle-footer .affiliates-logos {
+    flex-wrap: wrap;
+  }
+
+  .middle-footer .affiliates .img-box {
+    width: 80px;
+    height: auto;
+  }
+
+  .middle-footer .affiliates .img-box {
+    padding: 10px;
+  }
+}
+
 .lower-footer {
   display: flex;
   justify-content: space-between;
@@ -714,6 +918,21 @@ s .upper-footer .follow-us {
   padding: 20px;
 }
 
+@media screen and (max-width: 600px) {
+  .lower-footer .terms ul {
+    display: block;
+  }
+
+  .lower-footer .terms li {
+    padding: 10px 0;
+  }
+
+  .lower-footer .terms li:nth-child(2) a {
+    border: none;
+    padding: 0;
+  }
+}
+
 .copy-footer {
   display: flex;
   justify-content: space-between;
@@ -741,4 +960,14 @@ s .upper-footer .follow-us {
 .copy-footer .copy-text p {
   font-size: 16px;
   color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .copy-footer {
+    display: block;
+  }
+
+  .copy-footer .logo {
+    padding: 20px 0;
+  }
 }
