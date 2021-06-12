@@ -7,6 +7,7 @@
 * {
   margin: 0;
   padding: 0;
+  transition: all 0.3s;
 }
 body {
   font-size: 18px;
@@ -32,7 +33,13 @@ h5 {
 header {
   height: 120px;
   background: #000;
+  background-color: rgba(0, 0, 0, 0.7);
   overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
 .site-header {
@@ -84,7 +91,7 @@ header {
 }
 
 .logo-text svg {
-  height: 80px;
+  height: 60px;
   fill: #fff;
   padding-left: 20px;
 }
@@ -101,10 +108,10 @@ header {
 
 .min-list li {
   margin-left: 40px;
+  font-size: 14px;
 }
 
 .min-list a {
-  font-size: 14px;
   text-decoration: none;
   padding: 10px 0;
   color: #fff;

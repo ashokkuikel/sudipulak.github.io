@@ -25,3 +25,28 @@ var swiper = new Swiper(".swiper-container", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+window.onscroll = function () {
+  scrollFunction();
+};
+let logoDiv = document.querySelector(".logo-text");
+let logo = logoDiv.querySelector("svg");
+let header = document.querySelector("header");
+let menuUl = document.querySelector(".min-list");
+var menuLi = menuUl.querySelectorAll("li");
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    logo.style.height = "50px";
+    header.style.height = "90px";
+    menuLi.forEach((menu) => {
+      menu.style.fontSize = "15px";
+    });
+  } else {
+    logo.style.height = "60px";
+    header.style.height = "120px";
+    menuLi.forEach((menu) => {
+      menu.style.fontSize = "17px";
+    });
+  }
+}
