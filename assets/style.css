@@ -191,7 +191,6 @@ header {
 
 .banner {
   padding: 0 7%;
-  max-width: 1170px;
   height: 115vh;
   margin: auto;
   background: url("../assets/images/hero-banner.jpg");
@@ -209,7 +208,7 @@ header {
 .banner--inner__text h4 {
   position: relative;
   width: 465px;
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 600;
   color: #fff;
   line-height: 45px;
@@ -491,10 +490,14 @@ header {
   }
 }
 
-.first-col h3,
+.first-col h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
 .second-col h3,
 .third-col h3 {
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 
@@ -651,7 +654,7 @@ header {
 
 /* Footer Section */
 footer {
-  background: #333;
+  background: #000;
   padding: 60px 0;
 }
 

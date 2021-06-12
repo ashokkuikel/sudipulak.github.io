@@ -40,61 +40,66 @@
       </div>
     </header>
     <div class="banner">
-      <!-- Swiper -->
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="banner--inner">
-              <div class="banner--inner__text">
-                <h4>
-                  It's a brave new world, and the opportunity to piece together
-                  each student's unique lifelong education is already rich.
-                </h4>
-                <h3>Ashok Kuikel</h3>
-                <span>Youtuber, Blogger</span>
-              </div>
-              <div class="banner--inner__image">
-                <img src="assets/images/video-pop-up.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="banner--inner">
-              <div class="banner--inner__text">
-                <h4>
-                  It's a brave new world, and the opportunity to piece together
-                  each student's unique lifelong education is already rich.
-                </h4>
-                <h3>Ashok Kuikel</h3>
-                <span>Youtuber, Blogger</span>
-              </div>
-              <div class="banner--inner__image">
-                <img src="assets/images/video-pop-up.png" alt="" />
+      <div class="container">
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="banner--inner">
+                <div class="banner--inner__text">
+                  <h4>
+                    It's a brave new world, and the opportunity to piece
+                    together each student's unique lifelong education is already
+                    rich.
+                  </h4>
+                  <h3>Ashok Kuikel</h3>
+                  <span>Youtuber, Blogger</span>
+                </div>
+                <div class="banner--inner__image">
+                  <img src="assets/images/video-pop-up.png" alt="" />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="banner--inner">
-              <div class="banner--inner__text">
-                <h4>
-                  It's a brave new world, and the opportunity to piece together
-                  each student's unique lifelong education is already rich.
-                </h4>
-                <h3>Ashok Kuikel</h3>
-                <span>Youtuber, Blogger</span>
+            <div class="swiper-slide">
+              <div class="banner--inner">
+                <div class="banner--inner__text">
+                  <h4>
+                    It's a brave new world, and the opportunity to piece
+                    together each student's unique lifelong education is already
+                    rich.
+                  </h4>
+                  <h3>Ashok Kuikel</h3>
+                  <span>Youtuber, Blogger</span>
+                </div>
+                <div class="banner--inner__image">
+                  <img src="assets/images/video-pop-up.png" alt="" />
+                </div>
               </div>
-              <div class="banner--inner__image">
-                <img src="assets/images/video-pop-up.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <div class="banner--inner">
+                <div class="banner--inner__text">
+                  <h4>
+                    It's a brave new world, and the opportunity to piece
+                    together each student's unique lifelong education is already
+                    rich.
+                  </h4>
+                  <h3>Ashok Kuikel</h3>
+                  <span>Youtuber, Blogger</span>
+                </div>
+                <div class="banner--inner__image">
+                  <img src="assets/images/video-pop-up.png" alt="" />
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-      <!-- Add Arrows -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
     </div>
     <!-- About Section -->
     <div class="container about">
@@ -155,7 +160,7 @@
       </div>
     </div>
     <!-- Blog Section -->
-    <div class="blog container">
+    <div class="blog">
       <div class="first-col">
         <h3>Latest Blog</h3>
         <div class="blog__card">
@@ -167,6 +172,18 @@
             <h4><a href="#">Do Not Love the World</a></h4>
             <span class="author"
               ><i class="fas fa-book"></i>1 John 2:12-17</span
+            >
+          </div>
+        </div>
+        <div class="blog__card">
+          <a href="#" class="blog__card--image">
+            <i class="fas fa-headphones-alt"></i>
+          </a>
+          <div class="blog__card--description">
+            <span class="date">Sunday, June 6, 2021</span>
+            <h4><a href="#">How to Pray in a Pagan World.</a></h4>
+            <span class="author"
+              ><i class="fas fa-book"></i>1 Luke 2:12-17</span
             >
           </div>
         </div>
@@ -215,9 +232,9 @@
         </div>
         <div class="image-card">
           <h3>Be Part of the Family</h3>
-          <div class="img-box">
+          <!-- <div class="img-box">
             <img src="./assets/images/John-MacArthur-Home.jpg" alt="" />
-          </div>
+          </div> -->
           <p>
             If you’ve never contacted us before, we’d like to welcome you to the
             Grace to You family with a copy of John’s book Final Word.
@@ -315,7 +332,7 @@
               </li>
               <li>
                 <p>Fax :</p>
-                <i class="fas fa-fax"></i>661-295-5871
+                <a href="#"><i class="fas fa-fax"></i>661-295-5871</a>
               </li>
               <li>
                 <p>Email :</p>
