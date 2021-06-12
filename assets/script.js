@@ -33,7 +33,8 @@ let logoDiv = document.querySelector(".logo-text");
 let logo = logoDiv.querySelector("svg");
 let header = document.querySelector("header");
 let menuUl = document.querySelector(".min-list");
-var menuLi = menuUl.querySelectorAll("li");
+let menuLi = menuUl.querySelectorAll("li");
+let dropdownMenu = document.querySelector(".main-navigation");
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -42,11 +43,13 @@ function scrollFunction() {
     menuLi.forEach((menu) => {
       menu.style.fontSize = "15px";
     });
+    dropdownMenu.style.top = "90px";
   } else {
     logo.style.height = "60px";
     header.style.height = "120px";
     menuLi.forEach((menu) => {
       menu.style.fontSize = "17px";
     });
+    dropdownMenu.style.top = "120px";
   }
 }
