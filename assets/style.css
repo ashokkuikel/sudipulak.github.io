@@ -211,7 +211,7 @@ header {
   font-size: 22px;
   font-weight: 600;
   color: #fff;
-  line-height: 45px;
+  line-height: 55px;
 }
 
 .banner--inner__text h4::before {
@@ -305,16 +305,15 @@ header {
 
 .about__description h3 {
   text-transform: capitalize;
-  font-size: 36px;
+  font-size: 25px;
   line-height: 38px;
-  margin-bottom: 32px;
   color: rgba(0, 0, 0, 0.5);
 }
 
 .about__description h2 {
   font-weight: 700;
-  font-size: 60px;
-  margin-bottom: 60px;
+  font-size: 49px;
+  margin-bottom: 29px;
 }
 
 .about__description p {
@@ -324,7 +323,7 @@ header {
 }
 
 .about__description p:first-of-type {
-  margin-bottom: 60px;
+  margin-bottom: 35px;
 }
 
 .about__image img {
@@ -386,12 +385,13 @@ header {
 }
 
 .publication__title h3 {
-  font-size: 36px;
-  margin-bottom: 32px;
+  font-size: 25px;
+  line-height: 38px;
+  /* margin-bottom: 32px; */
 }
 
 .publication__title h2 {
-  font-size: 60px;
+  font-size: 49px;
   font-weight: 700;
   margin-bottom: 100px;
 }
