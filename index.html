@@ -92,7 +92,9 @@
                   <span>Youtuber, Blogger</span>
                 </div>
                 <div class="banner--inner__image">
-                  <img src="assets/images/video-pop-up.png" alt="" />
+                  <a href="#" id="videoModalTrigger">
+                    <img src="assets/images/video-pop-up.png" alt="" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -108,7 +110,9 @@
                   <span>Youtuber, Blogger</span>
                 </div>
                 <div class="banner--inner__image">
-                  <img src="assets/images/video-pop-up.png" alt="" />
+                  <a href="#">
+                    <img src="assets/images/video-pop-up.png" alt="" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -124,7 +128,9 @@
                   <span>Youtuber, Blogger</span>
                 </div>
                 <div class="banner--inner__image">
-                  <img src="assets/images/video-pop-up.png" alt="" />
+                  <a href="#">
+                    <img src="assets/images/video-pop-up.png" alt="" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -137,6 +143,22 @@
         <div class="swiper-button-prev"></div>
       </div>
     </div>
+
+    <!-- Banner Modal Container -->
+    <div class="modal" id="videoModalContainer">
+      <iframe
+        class="firstVideo"
+        src="https://www.youtube.com/embed/N-Hnv7IOrh0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <a href="#" class="close" id="bannerModalClose"
+        ><i class="far fa-window-close"></i>
+      </a>
+    </div>
+
     <!-- About Section -->
     <div class="container about">
       <div class="about__image">
@@ -268,9 +290,6 @@
         </div>
         <div class="image-card">
           <h3>Be Part of the Family</h3>
-          <!-- <div class="img-box">
-            <img src="./assets/images/John-MacArthur-Home.jpg" alt="" />
-          </div> -->
           <p>
             If you’ve never contacted us before, we’d like to welcome you to the
             Grace to You family with a copy of John’s book Final Word.

@@ -8,24 +8,7 @@ trigger.addEventListener("click", function () {
 
 console.log(trigger.classList);
 
-var swiper = new Swiper(".swiper-container", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  //autoplay:
-  //delay: 5000,
-  //disableOnInteraction: false,
-  //},
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
+// Fixed Navigation Style
 window.onscroll = function () {
   scrollFunction();
 };
@@ -53,3 +36,38 @@ function scrollFunction() {
     dropdownMenu.style.top = "120px";
   }
 }
+
+// Banner Slider
+var swiper = new Swiper(".swiper-container", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+// Banner Modal
+var bannerModalTrigger = document.getElementById("videoModalTrigger");
+var bannerModalContainer = document.getElementById("videoModalContainer");
+var bannerModalClose = document.querySelector("#bannerModalClose");
+
+bannerModalTrigger.addEventListener("click", function () {
+  bannerModalContainer.style.display = "flex";
+  document.body.style.height = "100vh";
+  document.body.style.overflow = "hidden";
+  bannerModalContainer.querySelector("iframe").src =
+    "https://www.youtube.com/embed/N-Hnv7IOrh0";
+});
+
+bannerModalClose.addEventListener("click", function () {
+  bannerModalContainer.style.display = "none";
+  document.body.style.height = "100%";
+  document.body.style.overflow = "auto";
+  bannerModalContainer.querySelector("iframe").src = "";
+});
